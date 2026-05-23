@@ -79,15 +79,19 @@ Groq LLM
 
 # 📸 Screenshots
 
-## Resume Analyzer
-(Add Screenshot Here)
+## Home Page
+![alt text](screenshots/Home.png)
+
+## Resume Analysis
+![alt text](<screenshots/Resume upload.png>)
+![alt text](<screenshots/Resume Analysis.png>)
 
 ## AI Career Chat
-(Add Screenshot Here)
+![alt text](<screenshots/AI Career Roadmap.png>)
 
 ## Multi-Agent Workflow
-(Add Screenshot Here)
-
+![alt text](<screenshots/Interview Questions.png>)
+![alt text](<screenshots/Skill Gap Analysis.png>)
 ---
 
 # 🚀 Installation
@@ -95,7 +99,7 @@ Groq LLM
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/AI-Career-Copilot.git
+git clone https://github.com/sanketcodes-16/AI-Career-Copilot.git
 ```
 
 ---
