@@ -33,13 +33,26 @@ def home():
 @app.get("/chat")
 def chat(message: str):
 
-    enhanced_message = f"""
-    User Question:
-    {message}
+    message_lower = message.lower()
 
-    Resume Context:
-    {stored_resume_text}
-    """
+    # Use resume context only for specific queries
+    if (
+        "resume" in message_lower
+        or "interview" in message_lower
+        or "skill" in message_lower
+        or "missing" in message_lower
+    ):
+
+        enhanced_message = f"""
+        User Question:
+        {message}
+
+        Resume Context:
+        {stored_resume_text}
+        """
+
+    else:
+        enhanced_message = message
 
     result = app_graph.invoke({
         "user_input": enhanced_message

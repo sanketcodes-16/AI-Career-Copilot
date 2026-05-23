@@ -133,17 +133,17 @@ def supervisor_agent(user_input):
 
     user_input_lower = user_input.lower()
 
-    # Resume Related
-    if "resume" in user_input_lower or "cv" in user_input_lower:
-        return resume_agent(user_input)
-
-    # Interview Related
-    elif "interview" in user_input_lower or "question" in user_input_lower:
+    # Interview Agent Priority
+    if "interview" in user_input_lower or "question" in user_input_lower:
         return interview_agent(user_input)
 
-    # Skill Gap Related
+    # Skill Gap Agent
     elif "skill" in user_input_lower or "missing" in user_input_lower:
         return skill_gap_agent(user_input)
+
+    # Resume Agent
+    elif "resume" in user_input_lower or "cv" in user_input_lower:
+        return resume_agent(user_input)
 
     # Default Career Agent
     else:
